@@ -1,5 +1,5 @@
 # Project 1
-**The following is a report on the work done by YOUR_CORPORATION_NAME on the project assigned during CSC 3105 coursework in the 2022/23 session.**
+**The following is a report on the work done by YOUR_CORPORATION_NAME on a project assigned during CSC 3105 coursework in the 2022/23 session, as follows:**
 
 ## Question
 You will define a UML-defined class hierarchy using the following concepts related to the idea of a social network app:
