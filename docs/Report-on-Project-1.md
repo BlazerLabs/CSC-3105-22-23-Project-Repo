@@ -17,3 +17,7 @@ Your tasks are as follows:
 | S/No. | Concept A | Concept B | Relationship | Explanation |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | ... | ... | ... | ... | ... |
+
+## Response
+_You can now draft your response beginning from here._
+
