@@ -1,5 +1,5 @@
 # Code
-The files in this directory contain the code developed by **BinaryHyWay** for the 2022/23 CSC 3105 coursework.
+The files in this directory contain the code developed by **Evergreen Dynamics** for the 2022/23 CSC 3105 coursework.
 
 ## File System Description
 Explain each folder and file in your code, in the form shown below.
