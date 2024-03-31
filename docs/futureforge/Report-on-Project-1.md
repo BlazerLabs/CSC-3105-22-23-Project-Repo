@@ -177,12 +177,12 @@ This project defines a class hierarchy for a social network app. The hierarchy i
 
 ## Contributors
 
-- @Emmzy-Tech
+- [@Emmzy-Tech](https://github.com/Emmzy-Tech)
 - [@Emilia-Ojobo]
 - [@Eberesundayikechukwu]
 - [@PrincGit]
 - [@Nmesoma5]
-- [@j]
+- [@Jenjoeirek]( https://github.com/orgs/VideoAmp/teams/team-name/members )
 - [@Debbievic2023]
 - [@ThankGod4]
 - [@Glorious5348]
