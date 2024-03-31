@@ -1,15 +1,34 @@
-// Initializing an array
-let array = [1, 2, 3, 4, 5];
 
-// Accessing elements
-console.log(array[0]); // Output: 1
+// i worked on the first two Data structures (Array, Linked List)
+// Name: Ebere Sunday Emmanuel
+// Reg.No: 20/csc/160
 
-// Modifying elements
-array[2] = 10;
-console.log(array); // Output: [1, 2, 10, 4, 5]
+//Start
 
-// Length of the array
-console.log(array.length); // Output: 5
+// 1, Array
+
+class MyArray {
+  constructor() {
+    this.data = [];
+  }
+
+  insert(item) {
+    this.data.push(item);
+  }
+
+  
+}
+
+// Example 
+let myArray = new MyArray();
+myArray.insert(1);
+myArray.insert(2);
+myArray.insert(3);
+myArray.insert(4);
+console.log(myArray.data); // Output: [1, 2, 3, 4]
+
+
+// 2, linked list
 
 // Node class to represent elements of the linked list
 class Node {
@@ -42,9 +61,11 @@ class LinkedList {
   }
 }
 
-// Example usage
+// Example 
 let linkedList = new LinkedList();
 linkedList.insertAtBeginning(1);
 linkedList.insertAtBeginning(2);
 linkedList.insertAtBeginning(3);
 linkedList.display(); // Output: 3 -> 2 -> 1
+
+//End of my section
