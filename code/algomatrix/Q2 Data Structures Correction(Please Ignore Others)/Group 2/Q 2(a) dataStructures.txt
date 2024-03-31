@@ -1,0 +1,38 @@
+'''
+
+Q 2(a)
+
+    Data structures complement algorithms in the way programs work, on account of their facility for organising
+    and enabling access to data;thus, understanding data structures is fundamental to our kknowledge and use of 
+    programs, irrespective of what paradigm is  in play.Examples of these data structures are as follows:
+
+
+   (1) Graph Data Structure: Graph data structure is a non-linear collection of vertices(nodes) that are connected 
+    by edges.It is used to represent relationships between different entities.It can be directed or undirected.
+
+   (2) Linked Lists: A linked list is a collection of nodes where each node contains a data field and a link to the
+    next node in the sequence.
+
+   (3) Trees Data Structure: Trees are hierarchical based data structure consisting of nodes connected by vertices.
+    Each node has a parent and zero or more child nodes.The first node is the root, the vertices are known as branches 
+    and the last child nodes are caled leaves. 
+
+   (4) Queue Data Structure: A queue is linear data structure that consists of a collection is of items that follow a 
+    First In, First Out (FIFO)sequence.This implies that the first item to be inserted will be the first to be removed.
+
+   (5) Stacks Data Structure: A stack is a Last In, First Out (LIFO) data structure. Elements are inserted and removed 
+    from only one end,called the top.
+
+   (6) Arrays: Arrays: An array is a collection of elements stored at contiguous memory locations. It allows for random
+    access to its elements based on an index. An array is a linear data structure that collects elements of the same
+    data type and stores them in contiguous and adjacent memory locations.
+
+   (7) Hash Tables: A hash table is a data structure that implements an associative array abstract data type, where keys 
+    are mapped to values using a hash function.It is a type of data structure in which the index value of the data 
+    element is generated from a hash function.
+
+   (8) Heaps: A heap is a binary tree-based data structure that satisfies the heap property: for every node, the parent 
+       node has a value less than or equal to (for a maximum heap) or greater than or equal to (for a minimum heap) the 
+       values of its children.
+
+'''
