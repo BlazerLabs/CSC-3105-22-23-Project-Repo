@@ -51,3 +51,25 @@ class ArrayDataStructure {
         return this.elements.length;
     }
 }
+
+// some test on the above class ---- contributed by Dennis 20-csc-130
+// Create a new instance of ArrayDataStructure
+const arrayDS = new ArrayDataStructure();
+
+// Add elements to the array
+arrayDS.add(10);
+arrayDS.add(20);
+arrayDS.add(30);
+
+// Get an element at a specific index
+const elementAtIndex1 = arrayDS.get(1);
+console.log("Element at index 1:", elementAtIndex1); // Output: 20
+
+// Remove an element at a specific index
+const removedElement = arrayDS.remove(0);
+console.log("Removed element:", removedElement); // Output: 10
+
+// Get the size of the array
+const sizeOfArray = arrayDS.size();
+console.log("Size of the array:", sizeOfArray); // Output: 2
+
