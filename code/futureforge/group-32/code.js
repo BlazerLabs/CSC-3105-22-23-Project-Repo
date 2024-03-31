@@ -230,5 +230,165 @@ class Stack {
   console.log("Queue elements after dequeue:", queue.printQueue()); // Output: 20 30
 
 
+  //Section worked on by Adikwu Mary 20/CSC/140
+
+//   Trees 
+
+//   A tree is a hierarchical data structure that consists of nodes connected by edges. 
+//   Each node has a value and a list of references to its child nodes. 
+//   The topmost node in the tree is called the root node. Trees are used to represent 
+//   hierarchical relationships like family trees, organization charts, file systems, etc.
 
 
+// Binary Tree implementation using classes
+
+class TreeNode {
+    constructor(value) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+class BinaryTree {
+    constructor() {
+        this.root = null;
+    }
+
+    // Insert a value into the binary tree
+    insert(value) {
+        const newNode = new TreeNode(value);
+        if (this.root === null) {
+            this.root = newNode;
+        } else {
+            this.insertNode(this.root, newNode);
+        }
+    }
+
+    insertNode(node, newNode) {
+        if (newNode.value < node.value) {
+            if (node.left === null) {
+                node.left = newNode;
+            } else {
+                this.insertNode(node.left, newNode);
+            }
+        } else {
+            if (node.right === null) {
+                node.right = newNode;
+            } else {
+                this.insertNode(node.right, newNode);
+            }
+        }
+    }
+
+    // Perform inorder traversal of the tree
+    inorderTraversal(node) {
+        if (node !== null) {
+            this.inorderTraversal(node.left);
+            console.log(node.value);
+            this.inorderTraversal(node.right);
+        }
+    }
+
+    // Perform preorder traversal of the tree
+    preorderTraversal(node) {
+        if (node !== null) {
+            console.log(node.value);
+            this.preorderTraversal(node.left);
+            this.preorderTraversal(node.right);
+        }
+    }
+
+    // Perform postorder traversal of the tree
+    postorderTraversal(node) {
+        if (node !== null) {
+            this.postorderTraversal(node.left);
+            this.postorderTraversal(node.right);
+            console.log(node.value);
+        }
+    }
+}
+
+// Example usage
+const tree = new BinaryTree();
+tree.insert(10);
+tree.insert(5);
+tree.insert(15);
+tree.insert(3);
+tree.insert(7);
+
+console.log("Inorder traversal:");
+tree.inorderTraversal(tree.root);
+
+console.log("Preorder traversal:");
+tree.preorderTraversal(tree.root);
+
+console.log("Postorder traversal:");
+tree.postorderTraversal(tree.root);
+
+
+// Heaps
+// A heap is a specialized tree-based data structure that satisfies the heap property. There are two types of heaps: max heap and min heap. 
+// In a max heap, for any given node, the value of the node is greater than or equal to the values of its children. In a min heap, the value 
+// of each node is smaller than or equal to the values of its children.
+
+// Max Heap implementation using classes
+
+class MaxHeap {
+    constructor() {
+        this.heap = [];
+    }
+
+    // Get the parent index of a node
+    getParentIndex(index) {
+        return Math.floor((index - 1) / 2);
+    }
+
+    // Get the left child index of a node
+    getLeftChildIndex(index) {
+        return 2 * index + 1;
+    }
+
+    // Get the right child index of a node
+    getRightChildIndex(index) {
+        return 2 * index + 2;
+    }
+
+    // Swap two elements in the heap
+    swap(index1, index2) {
+        const temp = this.heap[index1];
+        this.heap[index1] = this.heap[index2];
+        this.heap[index2] = temp;
+    }
+
+    // Insert a new element into the heap
+    insert(value) {
+        this.heap.push(value);
+        this.heapifyUp();
+    }
+
+    // Heapify up the newly added element
+    heapifyUp() {
+        let index = this.heap.length - 1;
+        while (index > 0 && this.heap[index] > this.heap[this.getParentIndex(index)]) {
+            const parentIndex = this.getParentIndex(index);
+            this.swap(index, parentIndex);
+            index = parentIndex;
+        }
+    }
+
+    // Print the heap
+    printHeap() {
+        console.log(this.heap);
+    }
+}
+
+// Example usage
+const maxHeap = new MaxHeap();
+maxHeap.insert(10);
+maxHeap.insert(5);
+maxHeap.insert(15);
+maxHeap.insert(3);
+maxHeap.insert(7);
+
+maxHeap.printHeap(); // Output: [15, 7, 10, 3, 5]
