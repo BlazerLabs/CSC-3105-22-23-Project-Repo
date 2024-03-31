@@ -20,16 +20,16 @@
                     <mxGeometry x="200" y="30" width="450" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="Connection" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="550" y="290" width="250" height="128" as="geometry"/>
+                    <mxGeometry x="560" y="290" width="270" height="160" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="- connectedUsers: User[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="10">
-                    <mxGeometry y="26" width="250" height="44" as="geometry"/>
+                    <mxGeometry y="26" width="270" height="24" as="geometry"/>
                 </mxCell>
                 <mxCell id="12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="10">
-                    <mxGeometry y="70" width="250" height="8" as="geometry"/>
+                    <mxGeometry y="50" width="270" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="+ addConnection(user: User): void&#10;+ removeConnection(user: User): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="10">
-                    <mxGeometry y="78" width="250" height="50" as="geometry"/>
+                <mxCell id="13" value="+ addConnection(user: User): void                      &#10; + removeConnection(user: User): void                   &#10; + getMutualConnections(user: User): User[]             &#10; + suggestConnections(user: User): User[]               &#10; + isConnected(user: User): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="10">
+                    <mxGeometry y="70" width="270" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="Media" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
                     <mxGeometry x="67.5" y="750" width="195" height="90" as="geometry"/>
