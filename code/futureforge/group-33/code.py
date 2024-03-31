@@ -281,3 +281,112 @@ max_heap.insert(7)
 
 max_heap.print_heap()  # Output: [15, 7, 10, 3, 5]
 
+
+#Section worked on by Ojobo Chiamaka Emilia 20/CSC/102
+
+# Hash Tables
+# A hash table is a data structure that implements an associative array abstract data type, 
+# a structure that can map keys to values. It uses a hash function to compute an index into an array of buckets or slots 
+# from which the desired value can be found. Here's a basic implementation of a hash table in Python:
+
+class HashTable:
+    def __init__(self):
+        self.size = 10
+        self.table = [[] for _ in range(self.size)]
+
+    def _hash_function(self, key):
+        return hash(key) % self.size
+
+    def insert(self, key, value):
+        index = self._hash_function(key)
+        self.table[index].append((key, value))
+
+    def search(self, key):
+        index = self._hash_function(key)
+        for k, v in self.table[index]:
+            if k == key:
+                return v
+        return None
+
+    def remove(self, key):
+        index = self._hash_function(key)
+        for i, (k, v) in enumerate(self.table[index]):
+            if k == key:
+                del self.table[index][i]
+                return
+
+# Example usage
+hash_table = HashTable()
+hash_table.insert("apple", 10)
+hash_table.insert("banana", 20)
+hash_table.insert("orange", 30)
+
+print("Search for 'apple':", hash_table.search("apple"))  # Output: 10
+print("Search for 'grape':", hash_table.search("grape"))  # Output: None
+
+hash_table.remove("banana")
+print("Search for 'banana':", hash_table.search("banana"))  # Output: None
+
+
+
+# Graphs
+# A graph is a collection of nodes (vertices) and edges that connect pairs of nodes. 
+# Graphs can be directed (edges have direction) or undirected (edges have no direction). 
+# Here's a basic implementation of an undirected graph using an adjacency list representation in Python:
+
+
+class Graph:
+    def __init__(self):
+        self.adjacency_list = {}
+
+    def add_vertex(self, vertex):
+        if vertex not in self.adjacency_list:
+            self.adjacency_list[vertex] = []
+
+    def add_edge(self, vertex1, vertex2):
+        if vertex1 in self.adjacency_list and vertex2 in self.adjacency_list:
+            self.adjacency_list[vertex1].append(vertex2)
+            self.adjacency_list[vertex2].append(vertex1)
+
+    def remove_edge(self, vertex1, vertex2):
+        if vertex1 in self.adjacency_list and vertex2 in self.adjacency_list:
+            self.adjacency_list[vertex1].remove(vertex2)
+            self.adjacency_list[vertex2].remove(vertex1)
+
+    def remove_vertex(self, vertex):
+        if vertex in self.adjacency_list:
+            for adjacent_vertex in self.adjacency_list[vertex]:
+                self.adjacency_list[adjacent_vertex].remove(vertex)
+            del self.adjacency_list[vertex]
+
+    def print_graph(self):
+        for vertex in self.adjacency_list:
+            print(vertex, "->", self.adjacency_list[vertex])
+
+# Example usage
+graph = Graph()
+graph.add_vertex("A")
+graph.add_vertex("B")
+graph.add_vertex("C")
+graph.add_vertex("D")
+
+graph.add_edge("A", "B")
+graph.add_edge("B", "C")
+graph.add_edge("C", "D")
+graph.add_edge("D", "A")
+
+graph.print_graph()
+# Output:
+# A -> ['B', 'D']
+# B -> ['A', 'C']
+# C -> ['B', 'D']
+# D -> ['C', 'A']
+
+graph.remove_edge("A", "B")
+graph.remove_vertex("C")
+
+graph.print_graph()
+# Output:
+# A -> ['D']
+# D -> ['A']
+
