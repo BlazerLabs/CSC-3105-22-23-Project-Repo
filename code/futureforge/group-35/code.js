@@ -146,3 +146,127 @@ linkedList.insertAtTail(30);
 linkedList.print(); // Output: 20 -> 10 -> 30
 linkedList.remove(10);
 linkedList.print(); // Output: 20 -> 30
+
+
+
+//Section worked on by Edet Saviour Daniel 20/CSC/162
+
+// Stacks
+// A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. 
+// This means that the last element added to the stack will be the first one to be removed. 
+// Think of it like a stack of plates where you can only remove the topmost plate.
+
+class Stack {
+    constructor() {
+        this.items = []; // Array to store stack elements
+    }
+
+    // Push operation: Add element to the top of the stack
+    push(element) {
+        this.items.push(element); // Add element to the end of the array
+    }
+
+    // Pop operation: Remove and return the top element from the stack
+    pop() {
+        if (this.isEmpty()) {
+            return "Underflow"; // Check if stack is empty
+        }
+        return this.items.pop(); // Remove and return last element of array
+    }
+
+    // Peek operation: Return the top element of the stack without removing it
+    peek() {
+        return this.items[this.items.length - 1]; // Return last element of array
+    }
+
+    // isEmpty operation: Check if the stack is empty
+    isEmpty() {
+        return this.items.length === 0; // Check if array is empty
+    }
+
+    // size operation: Return the size of the stack
+    size() {
+        return this.items.length; // Return length of array
+    }
+
+    // Print the elements of the stack
+    printStack() {
+        console.log(this.items.join(', ')); // Print array elements separated by comma
+    }
+}
+
+// Example usage
+const stack = new Stack(); // Create instance of Stack class
+stack.push(10); // Push elements
+stack.push(20);
+stack.push(30);
+
+stack.printStack(); // Output: 10, 20, 30
+console.log("Top element:", stack.peek()); // Output: 30
+console.log("Popped element:", stack.pop()); // Output: 30
+stack.printStack(); // Output: 10, 20
+
+
+
+// Queues
+// A queue is a linear data structure that follows the First In, 
+// First Out (FIFO) principle. This means that the first element added to the queue will be the first one to be removed. 
+// Think of it like a line of people waiting for a bus.
+
+class Queue {
+    constructor() {
+        this.items = []; // Array to store queue elements
+    }
+
+    // Enqueue operation: Add element to the end of the queue
+    enqueue(element) {
+        this.items.push(element); // Add element to the end of the array
+    }
+
+    // Dequeue operation: Remove and return the front element from the queue
+    dequeue() {
+        if (this.isEmpty()) {
+            return "Underflow"; // Check if queue is empty
+        }
+        return this.items.shift(); // Remove and return first element of array
+    }
+
+    // Front operation: Return the front element of the queue without removing it
+    front() {
+        if (this.isEmpty()) {
+            return "No elements in Queue"; // Check if queue is empty
+        }
+        return this.items[0]; // Return first element of array
+    }
+
+    // isEmpty operation: Check if the queue is empty
+    isEmpty() {
+        return this.items.length === 0; // Check if array is empty
+    }
+
+    // size operation: Return the size of the queue
+    size() {
+        return this.items.length; // Return length of array
+    }
+
+    // Print the elements of the queue
+    printQueue() {
+        console.log(this.items.join(', ')); // Print array elements separated by comma
+    }
+}
+
+// Example usage
+const queue = new Queue(); // Create instance of Queue class
+queue.enqueue(10); // Enqueue elements
+queue.enqueue(20);
+queue.enqueue(30);
+
+queue.printQueue(); // Output: 10, 20, 30
+console.log("Front element:", queue.front()); // Output: 10
+console.log("Dequeued element:", queue.dequeue()); // Output: 10
+queue.printQueue(); // Output: 20, 30
+
+
+
+
+
