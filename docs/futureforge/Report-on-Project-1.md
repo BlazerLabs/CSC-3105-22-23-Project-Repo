@@ -131,7 +131,17 @@ This project defines a class hierarchy for a social network app. The hierarchy i
   - `isSharedByUser(user: User): boolean`: Method to check if a post is shared by a user.
   - `getShareCount(): int`: Method to get the count of shares.
 
+### Reaction
 
+- Represents reactions to posts.
+- Attributes:
+  - `type`: Type of reaction.
+- Methods:
+  - `react(user: User, type: string): void`: Method to react to a post.
+  - `removeReaction(user: User): void`: Method to remove a reaction.
+  - `getType(): string`: Method to get the type of reaction.
+  - `getReactedByUsers(): User[]`: Method to get users who reacted to the post.
+  - `isReactedByUser(user: User): boolean`: Method to check if a post is reacted by a user.
 
 ### Like
 
