@@ -22,9 +22,8 @@ Your tasks are as follows:
 _You can now draft your response beginning from here._
 
 
-Sure, here's a README.md report for the task:
 
-# Social Network App Class Hierarchy
+# FutureForge Labs Social Network App Class Hierarchy
 
 This project defines a class hierarchy for a social network app. The hierarchy includes classes representing various entities and their relationships within the application domain.
 
