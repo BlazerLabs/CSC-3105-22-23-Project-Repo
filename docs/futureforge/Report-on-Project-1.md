@@ -178,16 +178,16 @@ This project defines a class hierarchy for a social network app. The hierarchy i
 ## Contributors
 
 - [@Emmzy-Tech](https://github.com/Emmzy-Tech)
-- [@Emilia-Ojobo]
-- [@Eberesundayikechukwu]
-- [@PrincGit]
-- [@Nmesoma5]
-- [@Jenjoeirek]( https://github.com/orgs/VideoAmp/teams/team-name/members )
-- [@Debbievic2023]
-- [@ThankGod4]
-- [@Glorious5348]
-- [@Adikwumary]
-- [@Fepeedjo]
+- [@Emilia-Ojobo](https://github.com/Emilia-Ojobo)
+- [@Eberesundayikechukwu](https://github.com/Eberesundayikechukwu)
+- [@PrincGit](https://github.com/PrincGit)
+- [@Nmesoma5](https://github.com/Nmesoma5)
+- [@Jenjoeirek]( https://github.com/Jenjoeirek)
+- [@Debbievic2023](https://github.com/Debbievic2023)
+- [@ThankGod4](https://github.com/ThankGod4)
+- [@Glorious5348](https://github.com/Glorious5348)
+- [@Adikwumary](https://github.com/Adikwumary)
+- [@Fepeedjo](https://github.com/Fepeedjo)
 
 ## License
 
