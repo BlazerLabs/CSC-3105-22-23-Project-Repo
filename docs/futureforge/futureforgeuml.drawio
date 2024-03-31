@@ -1,6 +1,7 @@
 <mxfile host="65bd71144e">
     <diagram id="2hImxgzDXVrk6QgNXSll" name="Page-1">
         <mxGraphModel dx="1388" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1500" background="none" math="0" shadow="0">
+        <mxGraphModel dx="384" dy="135" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -18,6 +19,8 @@
                 </mxCell>
                 <mxCell id="9" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 28px;&quot;&gt;FutureForge Labs UML Diagram&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
                     <mxGeometry x="530" y="50" width="450" height="50" as="geometry"/>
+                <mxCell id="9" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 28px;&quot;&gt;FutureForge Labs UML Diagram&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="10" width="450" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="Connection" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
                     <mxGeometry x="1085" y="260" width="270" height="160" as="geometry"/>
@@ -114,6 +117,29 @@
                 </mxCell>
                 <mxCell id="80" value="+ react(user: User, type: string): void               &#10; + removeReaction(user: User): void                    &#10; + getType(): string                                   &#10; + getReactedByUsers(): User[]                         &#10; + isReactedByUser(user: User): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="77">
                     <mxGeometry y="58" width="250" height="92" as="geometry"/>
+                <mxCell id="77" value="Reaction" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="335" y="750" width="195" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="- type: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="77" vertex="1">
+                    <mxGeometry y="26" width="195" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="77" vertex="1">
+                    <mxGeometry y="50" width="195" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="+ react(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="77" vertex="1">
+                    <mxGeometry y="58" width="195" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="Follower" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="960" width="260" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="- follower: User[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="81">
+                    <mxGeometry y="26" width="260" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="81">
+                    <mxGeometry y="50" width="260" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="+ follow(user: User): void&#10;+unfollow(user: User): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="81">
+                    <mxGeometry y="58" width="260" height="42" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
