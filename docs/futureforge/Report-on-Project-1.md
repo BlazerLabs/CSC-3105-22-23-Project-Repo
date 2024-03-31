@@ -164,9 +164,7 @@ This project defines a class hierarchy for a social network app. The hierarchy i
 | 2     | User        | Connection| Composition  | A `User` has a composition relationship with `Connection` to manage the connections between users.                                                           |
 | 3     | User        | Group     | Aggregation | A `User` can be a member of one or more `Group`s, but the existence of a `User` doesn't depend on the existence of a `Group`.                                |
 | 4     | User        | Post      | Association | A `User` can create and interact with multiple `Post`s, but the existence of a `User` and a `Post` is independent of each other.                             |
-| 5     | Group       | User      | Composition  | A `Group
-
-` has a composition relationship with `User`s to manage the membership of users within the group.                                                      |
+| 5     | Group       | User      | Composition  | A `Group ` has a composition relationship with `User`s to manage the membership of users within the group.                                                      |
 | 6     | Post        | Media     | Composition  | A `Post` can have multiple `Media` attachments, but the existence of `Media` objects is tied to the existence of `Post`s.                                      |
 | 7     | Post        | Reaction  | Association | Users can react to multiple `Post`s, but the existence of a `Post` and a `Reaction` is independent of each other.                                               |
 | 8     | Post        | Like      | Association | Users can like multiple `Post`s, but the existence of a `Post` and a `Like` is independent of each other.                                                     |
@@ -179,7 +177,7 @@ This project defines a class hierarchy for a social network app. The hierarchy i
 
 ## Contributors
 
-- [@Emmzy-Tech]
+- @Emmzy-Tech
 - [@Emilia-Ojobo]
 - [@Eberesundayikechukwu]
 - [@PrincGit]
