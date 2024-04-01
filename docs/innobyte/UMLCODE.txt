@@ -9,4 +9,12 @@ abstract class Person {
   + introduce()
 }
 
+class User {
+  - username: str
+  - email: str
+  - posts: List[Post]
+  + create_post(content: str)
+  + send_message(user: User, message: str)
+  + join_group(group: Group)
+}
 @enduml
