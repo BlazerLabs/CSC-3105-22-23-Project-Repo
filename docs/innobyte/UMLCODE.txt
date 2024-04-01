@@ -34,4 +34,16 @@ class Group {
   + get_group_name(): str
   + list_members(): List[User]
 }
+
+class Post {
+  - content: str
+  - author: User
+  - reactions: List[Reaction]
+  + edit_post(new_content: str)
+  + like_post(user: User)
+  + share_post(user: User)
+  + get_content(): str
+  + get_author(): User
+}
+
 @enduml
