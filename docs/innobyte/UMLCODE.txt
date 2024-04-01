@@ -46,4 +46,19 @@ class Post {
   + get_author(): User
 }
 
+abstract class Media {
+  - media_type: str
+  + display_media()
+  + download_media()
+}
+
+class Follower {
+  - follower: User
+  - following: User
+  + follow(user: User)
+  + unfollow(user: User)
+  + get_follower(): User
+  + get_following(): User
+}
+
 @enduml
