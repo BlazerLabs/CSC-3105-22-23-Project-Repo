@@ -81,4 +81,14 @@ Group "1" -- "*" Post : contains
 Group .. Connection : uses
 Group --|> Media
 
+Person --|> User
+User --|> Connection
+User "1" -- "*" Group : belongs to
+User "1" -- "*" Post : creates
+User "1" -- "*" Follower : has followers/following
+User "1" -- "*" Share : shares
+Post --|> Media
+Post "1" -- "*" Like : has likes
+Reaction <|.. Like
+
 @enduml
