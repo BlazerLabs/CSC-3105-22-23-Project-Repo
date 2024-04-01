@@ -17,4 +17,9 @@ class User {
   + send_message(user: User, message: str)
   + join_group(group: Group)
 }
+
+interface Connection {
+  + connect(user1: User, user2: User)
+  + removeConnection(User:User):void
+}
 @enduml
