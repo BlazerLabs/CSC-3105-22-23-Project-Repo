@@ -64,5 +64,12 @@ class QueueDS
             return $this->queue[$this->front]; // Return the front element
         }
     }
-
+  /**
+     * Check if the queue is empty.
+     * @return bool True if the queue is empty, false otherwise.
+     */
+    public function isEmpty()
+    {
+        return $this->front === -1; // Check if the front pointer is -1
+    }
 }
