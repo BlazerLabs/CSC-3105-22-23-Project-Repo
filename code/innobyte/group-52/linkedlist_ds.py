@@ -1,4 +1,6 @@
-
+#Linkedlist data structure task assigned to me
+#Author: Paul Olom
+#REgno: 20/CSC/110
 class LinkedList:
     def __init__(self):
         self.head = None  # Reference to the head of the linked list
@@ -21,3 +23,9 @@ class LinkedList:
             while current.next:
                 current = current.next
             current.next = new_node
+    # Display the elements of the linked list
+    def display(self):
+        current = self.head
+        while current:
+            print(current.data)
+            current = current.next
