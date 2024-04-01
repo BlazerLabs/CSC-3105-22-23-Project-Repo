@@ -3,6 +3,9 @@
 
 ## Question
 Data structures complement algorithms in the way programs work, on account of their facility for organising and enabling access to data; thus, understanding data structures is fundamental to our knowledge and use of programs, irrespective of what paradigm is in play.
+
+
+
 a. Each group in your corporation is to identify and describe ALL data structures used in programming.
 
 ## Response
