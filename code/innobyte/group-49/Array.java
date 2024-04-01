@@ -39,6 +39,9 @@ public class ArrayDS {
             throw new IndexOutOfBoundsException("Index " + index + " is out of bounds.");
         }
     }
-    
+    public int getCurrentSize() {
+        // Return the current size of the array
+        return size;
+    }
 }
 
