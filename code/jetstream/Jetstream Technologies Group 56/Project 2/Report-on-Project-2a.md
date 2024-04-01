@@ -14,6 +14,7 @@ Below, is a list of data structures across different categories as worked on by 
 4. Specialized Data Structures
 5. String Data Structures
 
+
 2. Non-Linear Data Structures
 Overview of Non-Linear Data Structures:
 
