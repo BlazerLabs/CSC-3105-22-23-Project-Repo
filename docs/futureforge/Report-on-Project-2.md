@@ -61,4 +61,17 @@ Each group was assigned to work on all nine discovered data structures, utilizin
 
 Through collaborative efforts, the project provided valuable insights into the design and implementation of fundamental data structures in software development. Team members gained hands-on experience in modeling, coding, and testing data structures, enhancing their understanding of algorithmic concepts and programming methodologies. The implemented data structures serve as valuable assets for future projects, contributing to the development of efficient and scalable software solutions.
 
-## Data
+## 5. Contributors
+
+- [@Emmzy-Tech](https://github.com/Emmzy-Tech)
+- [@Emilia-Ojobo](https://github.com/Emilia-Ojobo)
+- [@Eberesundayikechukwu](https://github.com/Eberesundayikechukwu)
+- [@PrincGit](https://github.com/PrincGit)
+- [@Nmesoma5](https://github.com/Nmesoma5)
+- [@Jenjoeirek]( https://github.com/Jenjoeirek)
+- [@Debbievic2023](https://github.com/Debbievic2023)
+- [@ThankGod4](https://github.com/ThankGod4)
+- [@Glorious5348](https://github.com/Glorious5348)
+- [@Adikwumary](https://github.com/Adikwumary)
+- [@Fepeedjo](https://github.com/Fepeedjo)
+- [@Edetsaviour190](https://github.com/Edetsaviour190)
