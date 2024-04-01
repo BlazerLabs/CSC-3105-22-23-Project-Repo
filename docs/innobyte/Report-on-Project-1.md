@@ -83,5 +83,6 @@ The designed UML model provides a comprehensive blueprint for a social media sys
 - [@isaacmatthew1](https://github.com/isaacmatthew1)
 - [@Vickieeeeee](https://github.com/Vickieeeeee)
 - [@Anitaofegobi](https://github.com/Anitaofegobi)
+- [@Zionist001](https://github.com/Zionist001)
 
 
