@@ -49,6 +49,20 @@ The UML model comprises several classes and interfaces organized in a hierarchic
    - The `Follower` class represents the follower relationship between users, allowing users to follow or unfollow others.
    - The `Share` class facilitates sharing posts between users, enabling content dissemination within the network.
 
+## Concepts Explanation Table:
+| S/No. | Concept A   | Concept B   | Relationship | Explanation                                                                                                                                                                     |
+|-------|-------------|-------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1     | Person      | User        | Inheritance  | User inherits properties and methods from Person because a user is a specific type of person with additional characteristics specific to the application, such as username and email.  |
+| 2     | User        | Connection  | Inheritance  | User inherits properties and methods from Connection because a user interacts with other users through connections such as friendships, follows, etc.                           |
+| 3     | Group       | Connection  | Association  | Group uses Connection because users within a group interact with each other through connections, like being members or following each other.                                |
+| 4     | Group       | Post        | Association  | Group contains Post because a group may have multiple posts created by its members.                                                                                            |
+| 5     | Group       | Media       | Inheritance  | Group inherits properties and methods from Media because it may contain media elements, such as images or videos, within its posts.                                         |
+| 6     | Post        | Media       | Association  | Post contains Media because a post may include media content like images, videos, or links.                                                                                   |
+| 7     | Post        | Like        | Association  | Post has Like because users can like posts.                                                                                                                                   |
+| 8     | Follower    | Connection  | Inheritance  | Follower inherits properties and methods from Connection because a follower relationship is a type of connection between users.                                               |
+| 9     | Share       | Post        | Association  | Share has Post because a user can share a specific post.                                                                                                                      |
+| 10    | Like        | Reaction    | Inheritance  | Like inherits properties and methods from Reaction because liking a post is a type of reaction.                                                                                |
+
 ## Relationships:
 - The UML diagram illustrates relationships between classes/interfaces, including inheritance, associations, and dependencies, reflecting how entities interact and collaborate within the system.
 - For instance, users inherit functionalities from the `Connection` interface to enable social interactions, while groups associate with posts and utilize connections for member interactions.
