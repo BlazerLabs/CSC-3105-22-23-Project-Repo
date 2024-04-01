@@ -15,7 +15,7 @@ Below, is a list of data structures across different categories as worked on by 
 5. String Data Structures
 
 
-1. Linear Data Structures:
+A. Linear Data Structures:
 Linear Data Structures Overview:
 
 Linear data structures organize and store data elements sequentially, allowing easy access and manipulation. These structures are fundamental in computer science and find applications in various algorithms and data processing tasks. Here's a comprehensive overview of some common linear data structures:
