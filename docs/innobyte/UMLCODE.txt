@@ -76,4 +76,9 @@ interface Reaction {
 class Like {
   + like_post(user: User, post: Post)
 }
+
+Group "1" -- "*" Post : contains
+Group .. Connection : uses
+Group --|> Media
+
 @enduml
