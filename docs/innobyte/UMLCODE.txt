@@ -1,0 +1,12 @@
+TITLE: INNOBYTE LABS UML DIAGRAM
+@startuml
+
+abstract class Person {
+  - name: str
+  - age: int
+  + update_profile()
+  + add_friend(person: Person)
+  + introduce()
+}
+
+@enduml
