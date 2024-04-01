@@ -61,4 +61,19 @@ class Follower {
   + get_following(): User
 }
 
+class Share {
+  - shared_post: Post
+  - user: User
+  + share_post(user: User, post: Post)
+  + get_shared_post(): Post
+  + get_user(): User
+}
+
+interface Reaction {
+  + react(user: User, post: Post, reaction_type: str)
+}
+
+class Like {
+  + like_post(user: User, post: Post)
+}
 @enduml
