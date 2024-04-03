@@ -1,0 +1,94 @@
+TITLE: INNOBYTE LABS UML DIAGRAM
+@startuml
+
+abstract class Person {
+  - name: str
+  - age: int
+  + update_profile()
+  + add_friend(person: Person)
+  + introduce()
+}
+
+class User {
+  - username: str
+  - email: str
+  - posts: List[Post]
+  + create_post(content: str)
+  + send_message(user: User, message: str)
+  + join_group(group: Group)
+}
+
+interface Connection {
+  + connect(user1: User, user2: User)
+  + removeConnection(User:User):void
+}
+
+class Group {
+  - group_name: str
+  - members: List[User]
+  - posts: List[Post]
+  + add_member(user: User)
+  +removeUser(user: User): void
+  + invite_member(user: User)
+  + post_in_group(content: str)
+  + get_group_name(): str
+  + list_members(): List[User]
+}
+
+class Post {
+  - content: str
+  - author: User
+  - reactions: List[Reaction]
+  + edit_post(new_content: str)
+  + like_post(user: User)
+  + share_post(user: User)
+  + get_content(): str
+  + get_author(): User
+}
+
+abstract class Media {
+  - media_type: str
+  + display_media()
+  + download_media()
+}
+
+class Follower {
+  - follower: User
+  - following: User
+  + follow(user: User)
+  + unfollow(user: User)
+  + get_follower(): User
+  + get_following(): User
+}
+
+class Share {
+  - shared_post: Post
+  - user: User
+  + share_post(user: User, post: Post)
+  + get_shared_post(): Post
+  + get_user(): User
+}
+
+interface Reaction {
+  + react(user: User, post: Post, reaction_type: str)
+}
+
+class Like {
+  + like_post(user: User, post: Post)
+}
+
+Group "1" -- "*" Post : contains
+Group .. Connection : uses
+Group --|> Media
+
+Person --|> User
+User --|> Connection
+User "1" -- "*" Group : belongs to
+User "1" -- "*" Post : creates
+User "1" -- "*" Follower : has followers/following
+User "1" -- "*" Share : shares
+Post --|> Media
+Post "1" -- "*" Like : has likes
+Reaction <|.. Like
+
+@enduml
