@@ -4,6 +4,29 @@ class Node:
     def __init__(self, data=None):
         self.data = data
         self.next = None
+        
+# Joseph's code 20/CSC/116
+class LinkedList:
+    def _init_(self):
+        self.head = None
+
+    def append(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+            return
+        last_node = self.head
+        while last_node.next:
+            last_node = last_node.next
+        last_node.next = new_node
+
+    def display(self):
+        current = self.head
+        while current:
+            print(current.data, end=' -> ')
+            current = current.next
+        print('None')
+
 
 class Queue:
     def __init__(self):
@@ -29,6 +52,14 @@ class Queue:
 
 # Test the implementations
 if __name__ == "__main__":
+    # Test LinkedList
+    print("Testing LinkedList:")
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(2)
+    ll.append(3)
+    ll.display()  # Output: 1 -> 2 -> 3 -> None
+
     # Test Queue
     print("\nTesting Queue:")
     queue = Queue()
