@@ -7,7 +7,7 @@ class Node:
         
 # Joseph's code 20/CSC/116
 class LinkedList:
-    def _init_(self):
+    def __init__(self):
         self.head = None
 
     def append(self, data):
@@ -27,6 +27,29 @@ class LinkedList:
             current = current.next
         print('None')
 
+
+# Victor's code 20/CSC/121
+class Stack:
+    def __init__(self):
+        self.items = []
+
+    def push(self, item):
+        self.items.append(item)
+
+    def pop(self):
+        if not self.is_empty():
+            return self.items.pop()
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def peek(self):
+        if not self.is_empty():
+            return self.items[-1]
+
+    def size(self):
+        return len(self.items)
+    
 
 class Queue:
     def __init__(self):
@@ -60,6 +83,16 @@ if __name__ == "__main__":
     ll.append(3)
     ll.display()  # Output: 1 -> 2 -> 3 -> None
 
+    # Test Stack
+    print("\nTesting Stack:")
+    stack = Stack()
+    stack.push(1)
+    stack.push(2)
+    stack.push(3)
+    print("Peek:", stack.peek())  # Output: 3
+    print("Pop:", stack.pop())    # Output: 3
+    print("Size:", stack.size())   # Output: 2
+
     # Test Queue
     print("\nTesting Queue:")
     queue = Queue()
@@ -70,3 +103,4 @@ if __name__ == "__main__":
     print("Dequeue:", queue.dequeue())  # Output: 1
     print("Size:", queue.size())  # Output: 2
 
+    
