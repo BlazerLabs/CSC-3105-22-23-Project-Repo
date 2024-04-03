@@ -16,6 +16,7 @@ Below, is a list of data structures across different categories as worked on by 
 
 
 B. NON-LINEAR DATA STRUCTURES
+
 Overview of Non-Linear Data Structures:
 
 In order to efficiently organize and handle data, non-linear data structures are necessary since they express complicated interactions between data items. This is a thorough rundown of a few popular non-linear data structures:
