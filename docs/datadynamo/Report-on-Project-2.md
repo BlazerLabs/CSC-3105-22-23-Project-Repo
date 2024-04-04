@@ -37,22 +37,20 @@ Data structures complement algorithms in the way programs work, on account of th
 1. Research and Understanding:
    - Thoroughly research the assigned data structure and its implementation details.
    - Ensure a clear understanding of the purpose, operations, and complexities associated with the data structure.
-
-### Implementation
-Write clean, efficient, and well-documented code for the assigned data structure.
-Follow best practices and coding standards relevant to the chosen programming language.
-
-### Collaboration
-Communicate effectively within the group to coordinate tasks and share progress updates.
-Address any issues or challenges encountered during the implementation process collaboratively.
+2. Implementation:
+   - Write clean, efficient, and well-documented code for the assigned data structure.
+   - Follow best practices and coding standards relevant to the chosen programming language.
+3. Collaboration:
+   - Communicate effectively within the group to coordinate tasks and share progress updates.
+   - Address any issues or challenges encountered during the implementation process collaboratively.
 
 ### General Assessment
 
 | Group    | Group Leader   | Group Member                                      |
 |----------|----------------|---------------------------------------------------|
-| Group 19 | 20/CSC/259     | 20/CSC/199 | 20/CSC/025 | 20/CSC/077 | 20/CSC/003 |
-| Group 20 | 22/D/CSC/007   | 20/CSC/195 | 20/CSC/117 | 20/CSC/145 |            |
-| Group 21 | 20/CSC/013     | 20/CSC/109 | 20/CSC/158 | 20/CSC/057 | 20/CSC/087 |
-| Group 22 | 20/CSC/063     | 20/CSC/051 | 20/CSC/225 | 20/CSC/056 | 20/CSC/193 |
-| Group 23 | 20/CSC/171     | 20/CSC/001 | 20/CSC/148 | 20/CSC/072 | 20/CSC/055 |
-| Group 24 | 20/CSC/168     | 20/CSC/053 | 20/CSC/067 |            |            |
+| Group 19 | 20/CSC/259     | 20/CSC/199 , 20/CSC/025 , 20/CSC/077 , 20/CSC/003 |
+| Group 20 | 22/D/CSC/007   | 20/CSC/195 , 20/CSC/117 , 20/CSC/145              |
+| Group 21 | 20/CSC/013     | 20/CSC/109 , 20/CSC/158 , 20/CSC/057 , 20/CSC/087 |
+| Group 22 | 20/CSC/063     | 20/CSC/051 , 20/CSC/225 , 20/CSC/056 , 20/CSC/193 |
+| Group 23 | 20/CSC/171     | 20/CSC/001 , 20/CSC/148 , 20/CSC/072 , 20/CSC/055 |
+| Group 24 | 20/CSC/168     | 20/CSC/053 , 20/CSC/067                           |
