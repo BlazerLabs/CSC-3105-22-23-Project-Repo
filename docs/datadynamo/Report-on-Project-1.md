@@ -1,5 +1,5 @@
 # Project 1
-**The following is a report on the work done by YOUR_CORPORATION_NAME on a project assigned during CSC 3105 coursework in the 2022/23 session, as follows:**
+**The following is a report on the work done by Data Dynamo System on a project assigned during CSC 3105 coursework in the 2022/23 session, as follows:**
 
 ## Question
 You will define a UML-defined class hierarchy using the following concepts related to the idea of a social network app:
@@ -37,3 +37,26 @@ Your tasks are as follows:
 | 9     | Post      | Reaction  | Association  | A Post can receive reactions from Users, enabling users to express their feelings towards posts. |
 | 10    | Reaction  | Abstract  | -            | Represents a general concept of a reaction to a Post, specific types like Like inherit from it. |
 | 11    | Like      | Reaction  | Inheritance  | A Like is a specific type of Reaction expressing positivity towards a Post. |
+
+# Project Report
+
+##Introduction
+Data Dynamo System undertook a project as part of the CSC 3105 coursework in the 2022/23 session. The project involved defining a UML class hierarchy for a social network app.
+
+##Objective
+The main objective of the project was to create a structured UML class diagram that represents the relationships and functionalities of various components within a social network application.
+
+##Methodology
+The team at Data Dynamo System followed a systematic approach to define the class hierarchy. They utilized real-world connotations within the social network domain to assign roles to each concept. The hierarchy included classes, abstract classes, and interfaces to represent the different components of the social network app.
+
+##Findings
+1. User and Person Inheritance: The concept of User was defined as a specific type of Person with additional functionalities related to social interaction.
+2. Connection Abstraction: A general concept of Connection was established, with specific types like Follower and Group inheriting from it.
+3. Post Associations: Various associations were defined, such as User creating a Post, Post containing multimedia content, having comments from Users, being shared by Users, and receiving reactions from Users.
+4. Reaction and Like Inheritance: The concept of Reaction was abstracted, with specific types like Like inheriting from it.
+
+##Conclusion
+The project successfully defined a UML class hierarchy for a social network app, showcasing the relationships and functionalities of key components within the application. The team's approach in utilizing inheritance, abstraction, and associations provided a clear and structured representation of the social network domain.
+
+##Recommendations
+Moving forward, it is recommended to further refine the class hierarchy by incorporating additional functionalities and refining the relationships between concepts to enhance the overall design of the social network application.
