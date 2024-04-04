@@ -1,39 +1,65 @@
-class BinaryTree {
+// DataStructuresExample.java
+
+import java.util.*;
+
+class TreeNode {
+    int key;
+    List<TreeNode> children;
+
+    TreeNode(int key) {
+        this.key = key;
+        this.children = new ArrayList<>();
+    }
+}
+
+class Tree {
     TreeNode root;
 
-    public BinaryTree() {
-        root = null;
+    Tree(int key) {
+        this.root = new TreeNode(key);
     }
+}
 
-    // Method to insert a value into the binary tree
-    public void insert(int val) {
-        root = insertRecursive(root, val);
-    }
+public class DataStructuresExample {
+    public static void main(String[] args) {
+        // Array
+        int[] myArray = {1, 2, 3, 4, 5};
+        System.out.println("Array elements: " + Arrays.toString(myArray));
 
-    private TreeNode insertRecursive(TreeNode node, int val) {
-        if (node == null) {
-            return new TreeNode(val);
-        }
+        // Stack
+        Stack<Integer> myStack = new Stack<>();
+        myStack.push(10);
+        myStack.push(20);
+        myStack.push(30);
+        System.out.println("Popped from stack: " + myStack.pop());
 
-        if (val < node.val) {
-            node.left = insertRecursive(node.left, val);
-        } else if (val > node.val) {
-            node.right = insertRecursive(node.right, val);
-        }
+        // Queue
+        Queue<String> myQueue = new LinkedList<>();
+        myQueue.add("Alice");
+        myQueue.add("Bob");
+        myQueue.add("Charlie");
+        System.out.println("Dequeued from queue: " + myQueue.poll());
 
-        return node;
-    }
+        // Linked List
+        LinkedList<String> myList = new LinkedList<>();
+        myList.add("Apple");
+        myList.add("Banana");
+        myList.add("Cherry");
+        System.out.println("Linked List: " + myList);
 
-    // Method to perform an inorder traversal of the binary tree
-    public void inorderTraversal() {
-        inorderTraversalRecursive(root);
-    }
+        // Tree
+        Tree myTree = new Tree(1);
+        myTree.root.children.add(new TreeNode(2));
+        myTree.root.children.add(new TreeNode(3));
 
-    private void inorderTraversalRecursive(TreeNode node) {
-        if (node != null) {
-            inorderTraversalRecursive(node.left);
-            System.out.print(node.val + " ");
-            inorderTraversalRecursive(node.right);
+        // Graph
+        Map<Integer, List<Integer>> myGraph = new HashMap<>();
+        myGraph.put(0, Arrays.asList(1, 2));
+        myGraph.put(1, Arrays.asList(2, 3));
+
+        // Print graph
+        for (int vertex : myGraph.keySet()) {
+            System.out.println("Vertex " + vertex + " connected to: " + myGraph.get(vertex));
         }
     }
 }
