@@ -65,14 +65,19 @@ class Graph {
         TreeNode root = new TreeNode(10);
         root.left = new TreeNode(5);
         root.right = new TreeNode(15);
-        // Perform tree operations (e.g., traversal, insertion, etc.)
-        // ...
-
+        
         // Graph
         int numVertices = 5;
         Graph graph = new Graph(numVertices);
         graph.addEdge(0, 1);
         graph.addEdge(1, 2);
         graph.addEdge(2, 3);
+
+        // Array
+        int[] myArray = {1, 2, 3, 4, 5};
+        System.out.println("Array elements:");
+        for (int element : myArray) {
+            System.out.print(element + " ");
+        }
     }
 }
