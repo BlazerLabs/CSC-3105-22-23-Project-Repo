@@ -58,5 +58,5 @@ The team at Data Dynamo System followed a systematic approach to define the clas
 ## Conclusion
 The project successfully defined a UML class hierarchy for a social network app, showcasing the relationships and functionalities of key components within the application. The team's approach in utilizing inheritance, abstraction, and associations provided a clear and structured representation of the social network domain.
 
-## ecommendations
+## Recommendations
 Moving forward, it is recommended to further refine the class hierarchy by incorporating additional functionalities and refining the relationships between concepts to enhance the overall design of the social network application.
