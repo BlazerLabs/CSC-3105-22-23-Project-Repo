@@ -24,14 +24,14 @@ Data structures complement algorithms in the way programs work, on account of th
 
 ### Data Structures Assigned to Groups
 
-| Group    | Data Type Assigned | Programming Language Assigned | Other Data Structures Attempted            |
-|----------|------------------|-------------------------------|----------------------------------------------|
-| Group 19 | Arrays           | Java                          | Linked Lists, Stacks, Queues, Trees, Graphs  |
-| Group 20 | Linked Lists     | JavaScript                    | Arrays, Stacks, Queues, Trees, Graphs        |
-| Group 21 | Stacks           | PHP                           | Arrays, Linked Lists, Queues, Trees, Graphs  |
-| Group 22 | Queues           | Python                        | Arrays, Linked Lists, Stacks, Trees, Graphs  |
-| Group 23 | Trees            | Java                          | Arrays, Linked Lists, Stacks, Queues, Graphs |
-| Group 24 | Graphs           | Python                        | Arrays, Linked Lists, Stacks, Queues, Trees  |
+| Group    | Data Type Assigned | Programming Language Assigned | Other Data Structures Attempted              |
+|----------|--------------------|-------------------------------|----------------------------------------------|
+| Group 19 | Arrays             | Java                          | Linked Lists, Stacks, Queues, Trees, Graphs  |
+| Group 20 | Linked Lists       | JavaScript                    | Arrays, Stacks, Queues, Trees, Graphs        |
+| Group 21 | Stacks             | PHP                           | Arrays, Linked Lists, Queues, Trees, Graphs  |
+| Group 22 | Queues             | Python                        | Arrays, Linked Lists, Stacks, Trees, Graphs  |
+| Group 23 | Trees              | Java                          | Arrays, Linked Lists, Stacks, Queues, Graphs |
+| Group 24 | Graphs             | Python                        | Arrays, Linked Lists, Stacks, Queues, Trees  |
 
 ### General Responsibilities
 1. Research and Understanding:
