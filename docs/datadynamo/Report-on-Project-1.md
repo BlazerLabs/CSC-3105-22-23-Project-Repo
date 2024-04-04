@@ -19,5 +19,21 @@ Your tasks are as follows:
 | ... | ... | ... | ... | ... |
 
 ## Response
-_You can now draft your response beginning from here._
 
+1. The UML class diagram would be found in the repo directory.
+
+2. The relationships between concepts were defined as follows:
+
+| S/No. | Concept A | Concept B | Relationship | Explanation |
+|-------|-----------|-----------|--------------|-------------|
+| 1     | User      | Person    | Inheritance  | A User is a specific type of Person with additional functionalities related to social interaction. |
+| 2     | Connection| Abstract  | -            | Represents a general concept of connection between users, specific types like Follower and Group inherit from it. |
+| 3     | Group     | Connection| Inheritance  | A Group is a type of Connection where multiple Users can be connected. |
+| 4     | Follower  | Connection| Inheritance  | A Follower is a type of Connection representing a one-directional following relationship between Users. |
+| 5     | Post      | User      | Association  | A User creates a Post, establishing ownership of content within the social network. |
+| 6     | Post      | Media     | Association  | A Post can contain multimedia content like images or videos. |
+| 7     | Post      | Comment   | Association  | A Post can have comments from Users, enabling user interaction and discussion. |
+| 8     | Post      | Share     | Association  | A Post can be shared by Users, allowing for content propagation within the network. |
+| 9     | Post      | Reaction  | Association  | A Post can receive reactions from Users, enabling users to express their feelings towards posts. |
+| 10    | Reaction  | Abstract  | -            | Represents a general concept of a reaction to a Post, specific types like Like inherit from it. |
+| 11    | Like      | Reaction  | Inheritance  | A Like is a specific type of Reaction expressing positivity towards a Post. |
