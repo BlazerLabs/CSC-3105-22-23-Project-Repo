@@ -22,3 +22,28 @@ class GraphDS:
     def getNeighbors(self, vertex):
         # Return the adjacency list of the given vertex
         return self.adjacencyList[vertex]
+
+# a demo example code 
+# Create a graph object
+graph = GraphDS()
+
+# Add vertices to the graph
+graph.addVertex('A')
+graph.addVertex('B')
+graph.addVertex('C')
+
+# Add edges between vertices
+graph.addEdge('A', 'B')
+graph.addEdge('B', 'C')
+graph.addEdge('A', 'C')
+
+# Check if an edge exists between two vertices
+print(graph.hasEdge('A', 'B'))  # Output: True
+print(graph.hasEdge('B', 'C'))  # Output: True
+print(graph.hasEdge('A', 'C'))  # Output: True
+print(graph.hasEdge('A', 'D'))  # Output: False (D doesn't exist)
+
+# Get neighbors of a vertex
+print(graph.getNeighbors('A'))  # Output: ['B', 'C']
+print(graph.getNeighbors('B'))  # Output: ['A', 'C']
+print(graph.getNeighbors('C'))  # Output: ['B', 'A']
