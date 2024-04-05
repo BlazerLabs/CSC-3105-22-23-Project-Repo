@@ -117,3 +117,20 @@ class LinkedList {
         console.log(result); // Print the result string
     }
 }
+
+// Example test usage for the above code:
+const list = new LinkedList(); // Create a new linked list
+list.append(1); // Append elements to the list
+list.append(2);
+list.append(3);
+list.append(4);
+list.print(); // Output: 1 2 3 4
+
+list.insertAt(2.5, 2); // Insert an element at a specific position
+list.print(); // Output: 1 2 2.5 3 4
+
+list.removeAt(3); // Remove an element at a specific position
+list.print(); // Output: 1 2 2.5 4
+
+console.log(list.indexOf(2.5)); // Output: 2
+
