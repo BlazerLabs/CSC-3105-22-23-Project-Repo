@@ -1,6 +1,6 @@
 // hash table data structure task for java assigned to me
 // Author : Ekom Jeffery mfam
-//Reg: 20/CSC/243
+// Reg: 20/CSC/243
 
 import java.util.LinkedList;
 
@@ -65,4 +65,29 @@ public class HashTable<Key, Value> {
             this.value = value;
         }
     }
+    
+    // Main method for testing the hash table functionality
+    public static void main(String[] args) {
+        // Create a new hash table with size 10
+        HashTable<String, Integer> hashTable = new HashTable<>(10);
+        
+        // Insert key-value pairs into the hash table
+        hashTable.put("apple", 10);
+        hashTable.put("banana", 20);
+        hashTable.put("orange", 30);
+    
+        // Retrieve and print the value associated with the key "banana"
+        System.out.println("Value for key 'banana': " + hashTable.get("banana"));
+        
+        // Retrieve and print the value associated with the key "apple"
+        System.out.println("Value for key 'apple': " + hashTable.get("apple"));
+    
+        // Remove the key "banana" from the hash table
+        hashTable.remove("banana");
+    
+        // Attempt to retrieve the value associated with the key "banana" after removal
+        // Print the value, which should be null since the key has been removed
+        System.out.println("Value for key 'banana' after removal: " + hashTable.get("banana"));
+    }
+    
 }
