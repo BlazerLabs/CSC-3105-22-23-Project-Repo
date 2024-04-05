@@ -47,5 +47,23 @@ public class Queue<T> {
         return removed; // Return the removed element
     }
 
+    // Method to return the element at the front of the queue without removing it (peek)
+    public T peek() {
+        if (isEmpty()) { // Check if the queue is empty
+            throw new IllegalStateException("Queue is empty"); // Throw an exception if the queue is empty
+        }
+        return elements[front]; // Return the element at the front
+    }
+
+    // Method to check if the queue is empty
+    public boolean isEmpty() {
+        return size == 0; // Check if the size is zero
+    }
+
+    // Method to get the size of the queue
+    public int size() {
+        return size; // Return the current size of the queue
+    }
+
 }
 
