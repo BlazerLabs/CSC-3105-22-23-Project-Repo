@@ -44,6 +44,25 @@ class StackDS
         }
     }
 
+        /**
+     * Peek at the top element of the stack without removing it.
+     * @return mixed|null The top element, or null if the stack is empty.
+     */
+    public function peek()
+    {
+        if ($this->isEmpty()) {
+            return null; // Return null if the stack is empty
+        } else {
+            return $this->stack[$this->top]; // Return the top element
+        }
+    }
 
-
+    /**
+     * Check if the stack is empty.
+     * @return bool True if the stack is empty, false otherwise.
+     */
+    public function isEmpty()
+    {
+        return $this->top === -1; // Check if the top pointer is -1
+    }
 }
