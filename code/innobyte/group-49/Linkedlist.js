@@ -38,7 +38,7 @@ class LinkedList {
             return false; // Return false if index is out of range
         }
 
-                const newNode = new Node(data); // Create a new node with the given data
+    const newNode = new Node(data); // Create a new node with the given data
 
         if (index === 0) { // If inserting at the beginning
             newNode.next = this.head; // Set the next pointer of the new node to the current head
@@ -88,4 +88,32 @@ class LinkedList {
         return current.data; // Return the data of the removed node
     }
 
+    // Method to find the index of the first occurrence of a given data in the list
+    indexOf(data) {
+        let current = this.head; // Start traversal from the head
+        let index = 0; // Initialize index to 0
+
+        while (current) { // Traverse until reaching the end of the list
+            if (current.data === data) { // If current node's data matches the given data
+                return index; // Return the index
+            }
+            current = current.next; // Move to the next node
+            index++; // Increment index
+        }
+
+        return -1; // Return -1 if data is not found in the list
+    }
+
+    // Method to print the elements of the list
+    print() {
+        let current = this.head; // Start traversal from the head
+        let result = ''; // Initialize an empty string to store the result
+
+        while (current) { // Traverse until reaching the end of the list
+            result += current.data + ' '; // Append current node's data to the result string
+            current = current.next; // Move to the next node
+        }
+
+        console.log(result); // Print the result string
+    }
 }
