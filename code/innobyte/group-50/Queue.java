@@ -22,5 +22,30 @@ public class Queue<T> {
         rear = -1; // Initialize the rear index to -1 as there are no elements in the queue
     }
 
+    // Method to add an element to the rear of the queue (enqueue)
+    public void enqueue(T element) {
+        if (size == elements.length) { // Check if the array is full
+            resize(elements.length * 2); // Resize the array if it's full
+        }
+        rear = (rear + 1) % elements.length; // Calculate the new rear index
+        elements[rear] = element; // Add the element to the rear
+        size++; // Increment the size
+    }
+
+    // Method to remove and return the element at the front of the queue (dequeue)
+    public T dequeue() {
+        if (isEmpty()) { // Check if the queue is empty
+            throw new IllegalStateException("Queue is empty"); // Throw an exception if the queue is empty
+        }
+        T removed = elements[front]; // Get the element at the front
+        elements[front] = null; // Help with garbage collection
+        front = (front + 1) % elements.length; // Calculate the new front index
+        size--; // Decrement the size
+        if (size > 0 && size == elements.length / 4) { // Check if the array is less than 25% full
+            resize(elements.length / 2); // Resize the array to half of its current size
+        }
+        return removed; // Return the removed element
+    }
+
 }
 
