@@ -76,5 +76,22 @@ public class Queue<T> {
         rear = size - 1; // Update the rear index
     }
 
+    // Main method for testing the data structure
+    public static void main(String[] args) {
+        Queue<Integer> queue = new Queue<>(3); // Create a queue with capacity 3
+        queue.enqueue(10); // Enqueue elements into the queue
+        queue.enqueue(20);
+        queue.enqueue(30);
+
+        System.out.println("Size of the queue: " + queue.size()); // Print the size of the queue
+
+        System.out.println("Dequeued element: " + queue.dequeue()); // Dequeue and print an element
+        System.out.println("Dequeued element: " + queue.dequeue());
+
+        System.out.println("Element at the front of the queue: " + queue.peek()); // Peek and print the element at the front
+
+        System.out.println("Size of the queue after dequeue: " + queue.size()); // Print the size of the queue after dequeue
+    }
+
 }
 
