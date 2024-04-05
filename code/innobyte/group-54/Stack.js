@@ -18,5 +18,32 @@ class StackDS
         $this->stack = []; // Initialize the stack as an empty array
         $this->top = -1;   // Initialize the top pointer to -1 (empty stack)
     }
+    /**
+     * Push an element onto the stack.
+     * @param mixed $value The value to push onto the stack.
+     */
+    public function push($value)
+    {
+        $this->top++;             // Increment the top pointer
+        $this->stack[$this->top] = $value; // Add the value to the top of the stack
+    }
+
+    /**
+     * Pop the top element from the stack and return it.
+     * @return mixed|null The popped element, or null if the stack is empty.
+     */
+    public function pop()
+    {
+        if ($this->isEmpty()) {
+            return null; // Return null if the stack is empty
+        } else {
+            $value = $this->stack[$this->top]; // Get the top element
+            unset($this->stack[$this->top]);   // Remove the top element
+            $this->top--;                      // Decrement the top pointer
+            return $value;                     // Return the popped element
+        }
+    }
+
+
 
 }
