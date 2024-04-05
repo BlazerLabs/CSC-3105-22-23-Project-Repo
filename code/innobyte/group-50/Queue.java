@@ -65,5 +65,16 @@ public class Queue<T> {
         return size; // Return the current size of the queue
     }
 
+    // Method to resize the array
+    private void resize(int capacity) {
+        T[] newArray = (T[]) new Object[capacity]; // Create a new array with the specified capacity
+        for (int i = 0; i < size; i++) {
+            newArray[i] = elements[(front + i) % elements.length]; // Copy elements from the old array to the new array
+        }
+        elements = newArray; // Update the elements array reference to the new array
+        front = 0; // Reset the front index
+        rear = size - 1; // Update the rear index
+    }
+
 }
 
