@@ -16,10 +16,13 @@ Each directory contains the work done and detail (reg number) of every team memb
 ### Team Members
 
 
+
 **Jetstream Technologies**
 
 
+
 **CEO - 20/CSC/182**
+
 
 
 1. Jetstream Technologies Group 55
@@ -34,7 +37,7 @@ Each directory contains the work done and detail (reg number) of every team memb
 21/D/CSC/001
 
 
-3. Jetstream Technologies Group 56
+2. Jetstream Technologies Group 56
 20/csc/170 (Group Leader)
 
 20/csc /079
@@ -46,7 +49,7 @@ Each directory contains the work done and detail (reg number) of every team memb
 20/csc/144
 
 
-5. Jetstream Technologies Group 57
+3. Jetstream Technologies Group 57
 20/CSC/086 (Group Leader)
 
 20/CSC/009
@@ -58,7 +61,7 @@ Each directory contains the work done and detail (reg number) of every team memb
 20/CSC/247
 
 
-7. Jetstream Technologies Group 58
+4. Jetstream Technologies Group 58
 20/CSC/219 (Group Leader)
 
 19/CSC/081
@@ -70,7 +73,7 @@ Each directory contains the work done and detail (reg number) of every team memb
 20/CSC/254
 
 
-8. Jetstream Technologies Group 59
+5. Jetstream Technologies Group 59
 20/CSC/233 (Group Leader)
 
 20/CSC/240
@@ -80,3 +83,8 @@ Each directory contains the work done and detail (reg number) of every team memb
 20/ARC/038T
 
 20/Csc/021
+
+
+6. Jetstream Technologies Group 60
+
+NO AVAILABLE MEMBER
