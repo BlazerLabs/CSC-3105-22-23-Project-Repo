@@ -1,13 +1,9 @@
 # Code
 The files in this directory contain the code developed by **Jetstream Technologies** for the 2022/23 CSC 3105 coursework.
 
-## File System Description
-Explain each folder and file in your code, in the form shown below.
+## File Description
 
-_Replace these lines with some intro content._
+Welcome to Jetstream Technologies
 
-1. DirectoryA - Reason
-    1. FileA - Reason
-    2. FileB - Reason
-3. DirectoryB - Reason
-4. DirectoryC - Reason
+This directory contains sub-directories for each group under Jetstream Technologies.
+Each directory contains the work done and detail (reg number) of every team member in their various groups.
