@@ -21,3 +21,14 @@ class Queue:
             return self.items.pop(0)
         else:
             raise IndexError("dequeue from an empty queue")
+    
+    def peek(self):
+        """Return the item at the front of the queue without removing it."""
+        if not self.is_empty():
+            return self.items[0]
+        else:
+            raise IndexError("peek from an empty queue")
+
+    def size(self):
+        """Return the number of items in the queue."""
+        return len(self.items)
