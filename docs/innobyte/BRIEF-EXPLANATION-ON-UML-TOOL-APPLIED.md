@@ -62,3 +62,7 @@ Under here we're explaining some relationships, their notation and how they're a
 4. **Generalization (Inheritance) (A <|-- B)**:
    - **Meaning**: Indicates that one class is a specialized form of another class, known as the superclass. It represents an "is-a" relationship.
    - **Example**: A `Student` <|-- `Person`. A student is a person.
+
+5. **Realization (Interface) (A .--| B)**:
+   - **Meaning**: Shows that a class implements the behavior specified by an interface. It represents a contract between the class and the interface.
+   - **Example**: A `Bird` .--| `Flyable`. The bird class implements the Flyable interface, meaning it can fly.
