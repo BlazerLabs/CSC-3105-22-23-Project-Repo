@@ -164,5 +164,23 @@ class Queue {
       return this.items[0];
   }
 
+  // Check if the queue is empty
+  isEmpty() {
+      return this.items.length === 0;
+  }
+
+  // Return the size of the queue
+  size() {
+      return this.items.length;
+  }
+
+  // Print all elements of the queue
+  printQueue() {
+      let result = "";
+      for (let i = 0; i < this.items.length; i++) {
+          result += this.items[i] + " ";
+      }
+      console.log("Queue: " + result);
+  }
 }
 
