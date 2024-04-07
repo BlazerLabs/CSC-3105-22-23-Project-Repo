@@ -137,3 +137,12 @@ stack.printStack(); // Output: Stack: 10 20
 // Queue
 // A queue is a linear data structure that follows the First In, First Out (FIFO) principle, 
 // where elements are added to the rear (enqueue) and removed from the front (dequeue) of the queue.
+
+class Queue {
+  constructor() {
+      this.items = []; // Initialize an empty array to store queue elements
+  }
+
+
+}
+
