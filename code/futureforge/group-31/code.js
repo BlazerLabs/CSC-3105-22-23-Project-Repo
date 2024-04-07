@@ -126,4 +126,8 @@ stack.push(10);
 stack.push(20);
 stack.push(30);
 
-
+console.log("Stack size:", stack.size()); // Output: 3
+console.log("Top element:", stack.peek()); // Output: 30
+stack.printStack(); // Output: Stack: 10 20 30
+console.log("Popped element:", stack.pop()); // Output: 30
+stack.printStack(); // Output: Stack: 10 20
