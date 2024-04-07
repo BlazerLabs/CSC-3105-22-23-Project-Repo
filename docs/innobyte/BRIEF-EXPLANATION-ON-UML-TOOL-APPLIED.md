@@ -85,3 +85,5 @@ Under here we're explaining some relationships, their notation and how they're a
 _You can use PlantUML with various software:_
 
 - Visual Studio Code: Utilize extensions like PlantUML to integrate PlantUML support directly into your coding environment.
+- IntelliJ IDEA: Leverage plugins like PlantUML integration to seamlessly generate diagrams within your IDE.
+- Online Editors: Platforms like PlantText provide online editors for creating PlantUML diagrams without the need for local installation.
