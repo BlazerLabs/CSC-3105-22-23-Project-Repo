@@ -76,3 +76,13 @@ linkedList.display(); // Output: 3 -> 2 -> 1
 // Stacks
 // A stack is a linear data structure that follows the Last In, 
 // First Out (LIFO) principle, where elements are added and removed from the top of the stack.
+
+class Stack {
+  constructor() {
+      this.items = []; // Initialize an empty array to store stack elements
+  }
+
+ 
+}
+
+
