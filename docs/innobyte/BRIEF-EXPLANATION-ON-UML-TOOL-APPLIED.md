@@ -66,3 +66,8 @@ Under here we're explaining some relationships, their notation and how they're a
 5. **Realization (Interface) (A .--| B)**:
    - **Meaning**: Shows that a class implements the behavior specified by an interface. It represents a contract between the class and the interface.
    - **Example**: A `Bird` .--| `Flyable`. The bird class implements the Flyable interface, meaning it can fly.
+  
+6. **Dependency (A ..> B)**:
+   - **Meaning**: Signifies that one class depends on another class. Changes in the dependent class may affect the class it depends on.
+   - **Example**: `Class A` ..> `Class B`. If Class A uses the functionalities of Class B, it has a dependency on Class B. If Class B changes, Class A might need to change as well.
+
