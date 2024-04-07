@@ -24,3 +24,14 @@ PlantUML is an open-source tool that enables users to create diagrams from simpl
 - **Project Management**: Represent project plans, timelines, and dependencies.
   
 - **Education**: Explain complex topics and concepts in courses, workshops, and presentations.
+
+### Defining Entities, Properties, and Methods
+
+```plantuml
+class MyClass {
+  - property1: DataType
+  - property2: DataType
+  + method1(): ReturnType
+  + method2(parameter: ParameterType): ReturnType
+}
+```
