@@ -188,6 +188,7 @@ This project defines a class hierarchy for a social network app. The hierarchy i
 - [@Adikwumary](https://github.com/Adikwumary)
 - [@Fepeedjo](https://github.com/Fepeedjo)
 - [@Edetsaviour190](https://github.com/Edetsaviour190)
+- [@murphyologo1999](https://github.com/murphyologo1999)
 
 ## License
 
