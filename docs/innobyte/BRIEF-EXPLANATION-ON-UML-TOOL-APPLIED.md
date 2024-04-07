@@ -46,3 +46,8 @@ Class1 ..> Class2 : Dependency
 ```
 ### Further explanation on relationships & how to define relationships using plantuml
 Under here we're explaining some relationships, their notation and how they're applied in plantuml
+
+1. **Association (A ---- B)**:
+   - **Meaning**: Indicates a relationship between two classes where instances of one class are related to instances of the other class. It can be one-to-one, one-to-many, or many-to-many.
+   - **Example**: A `Car` ---- `Driver`. A car can have one or more drivers, and a driver can drive one or more cars.
+
