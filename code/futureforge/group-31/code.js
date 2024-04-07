@@ -143,6 +143,26 @@ class Queue {
       this.items = []; // Initialize an empty array to store queue elements
   }
 
+  // Add element to the rear of the queue
+  enqueue(element) {
+      this.items.push(element);
+  }
+
+  // Remove and return the front element of the queue
+  dequeue() {
+      if (this.isEmpty()) {
+          return "Underflow - Queue is empty";
+      }
+      return this.items.shift();
+  }
+
+  // Return the front element of the queue without removing it
+  front() {
+      if (this.isEmpty()) {
+          return "Queue is empty";
+      }
+      return this.items[0];
+  }
 
 }
 
