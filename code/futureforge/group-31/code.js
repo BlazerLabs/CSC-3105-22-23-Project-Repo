@@ -71,3 +71,8 @@ linkedList.display(); // Output: 3 -> 2 -> 1
 //End of my section
 
 
+//Section worked on by Moses Amarachi 20/CSC/078
+
+// Stacks
+// A stack is a linear data structure that follows the Last In, 
+// First Out (LIFO) principle, where elements are added and removed from the top of the stack.
