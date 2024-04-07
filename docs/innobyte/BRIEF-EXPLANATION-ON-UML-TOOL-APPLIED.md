@@ -80,3 +80,8 @@ Under here we're explaining some relationships, their notation and how they're a
 - Consistency: Uniform styling and formatting for diagrams.
 - Version Control: Diagram descriptions can be versioned alongside code.
 - Automation: Automatic diagram generation saves time and reduces errors
+
+## Supported Software
+_You can use PlantUML with various software:_
+
+- Visual Studio Code: Utilize extensions like PlantUML to integrate PlantUML support directly into your coding environment.
