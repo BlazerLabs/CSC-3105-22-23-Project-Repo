@@ -35,3 +35,12 @@ class MyClass {
   + method2(parameter: ParameterType): ReturnType
 }
 ```
+### Defining Relationships Between Entities
+```
+class Class1
+class Class2
+
+Class1 -- Class2 : Association
+Class1 <|-- Class2 : Inheritance
+Class1 ..> Class2 : Dependency
+```
