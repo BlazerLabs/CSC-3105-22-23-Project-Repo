@@ -93,3 +93,4 @@ _You can use PlantUML with various software:_
 - Class Declaration: class ClassName { }
 - Properties: - propertyName: Type
 - Methods: + methodName(parameters): ReturnType
+- Relationships: Entity1 -- Entity2 : Relationship
