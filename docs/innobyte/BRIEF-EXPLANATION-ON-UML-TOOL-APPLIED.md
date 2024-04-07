@@ -75,3 +75,6 @@ Under here we're explaining some relationships, their notation and how they're a
    - **Meaning**: Represents an association between two classes with its own class, often used when the association itself has attributes or behavior.
    - **Example**: `Student` ----< `Enrollment` >---- `Course`. The Enrollment class represents the association between a student and a course, possibly with attributes like enrollment date or grade.
 
+### Why Use PlantUML
+- Simplicity: Easy-to-write plain text descriptions.
+- Consistency: Uniform styling and formatting for diagrams.
