@@ -131,3 +131,9 @@ console.log("Top element:", stack.peek()); // Output: 30
 stack.printStack(); // Output: Stack: 10 20 30
 console.log("Popped element:", stack.pop()); // Output: 30
 stack.printStack(); // Output: Stack: 10 20
+
+
+
+// Queue
+// A queue is a linear data structure that follows the First In, First Out (FIFO) principle, 
+// where elements are added to the rear (enqueue) and removed from the front (dequeue) of the queue.
