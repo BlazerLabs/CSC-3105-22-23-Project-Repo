@@ -78,3 +78,5 @@ Under here we're explaining some relationships, their notation and how they're a
 ### Why Use PlantUML
 - Simplicity: Easy-to-write plain text descriptions.
 - Consistency: Uniform styling and formatting for diagrams.
+- Version Control: Diagram descriptions can be versioned alongside code.
+- Automation: Automatic diagram generation saves time and reduces errors
