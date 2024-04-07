@@ -184,3 +184,14 @@ class Queue {
   }
 }
 
+// Example usage of the Queue class
+let queue = new Queue();
+queue.enqueue(10);
+queue.enqueue(20);
+queue.enqueue(30);
+
+console.log("Queue size:", queue.size()); // Output: 3
+console.log("Front element:", queue.front()); // Output: 10
+queue.printQueue(); // Output: Queue: 10 20 30
+console.log("Dequeued element:", queue.dequeue()); // Output: 10
+queue.printQueue(); // Output: Queue: 20 30
