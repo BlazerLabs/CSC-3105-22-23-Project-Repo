@@ -58,3 +58,7 @@ Under here we're explaining some relationships, their notation and how they're a
 3. **Composition (A o-- B)**:
    - **Meaning**: Similar to aggregation but with stronger ownership. The part cannot exist independently of the whole; it's part of the whole's lifecycle.
    - **Example**: A `Car` o-- `Engine`. An engine is part of the car, and if the car is destroyed, the engine is typically destroyed too.
+
+4. **Generalization (Inheritance) (A <|-- B)**:
+   - **Meaning**: Indicates that one class is a specialized form of another class, known as the superclass. It represents an "is-a" relationship.
+   - **Example**: A `Student` <|-- `Person`. A student is a person.
