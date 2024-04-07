@@ -54,3 +54,7 @@ Under here we're explaining some relationships, their notation and how they're a
 2. **Aggregation (A <>-- B)**:
    - **Meaning**: Represents a relationship where one class (the whole) contains or is associated with another class (the part). The part can exist independently of the whole.
    - **Example**: A `University` <>-- `Department`. A department belongs to a university, but it can exist independently if the university closes.
+
+3. **Composition (A o-- B)**:
+   - **Meaning**: Similar to aggregation but with stronger ownership. The part cannot exist independently of the whole; it's part of the whole's lifecycle.
+   - **Example**: A `Car` o-- `Engine`. An engine is part of the car, and if the car is destroyed, the engine is typically destroyed too.
