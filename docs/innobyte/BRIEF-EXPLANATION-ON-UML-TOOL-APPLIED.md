@@ -44,3 +44,5 @@ Class1 -- Class2 : Association
 Class1 <|-- Class2 : Inheritance
 Class1 ..> Class2 : Dependency
 ```
+### Further explanation on relationships & how to define relationships using plantuml
+Under here we're explaining some relationships, their notation and how they're applied in plantuml
