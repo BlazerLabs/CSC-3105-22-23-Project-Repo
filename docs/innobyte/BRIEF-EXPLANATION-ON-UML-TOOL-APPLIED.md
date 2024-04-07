@@ -91,3 +91,5 @@ _You can use PlantUML with various software:_
 ## Syntaxes for UML Entities in PlantUML
 
 - Class Declaration: class ClassName { }
+- Properties: - propertyName: Type
+- Methods: + methodName(parameters): ReturnType
