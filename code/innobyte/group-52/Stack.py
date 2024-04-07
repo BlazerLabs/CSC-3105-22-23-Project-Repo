@@ -33,3 +33,23 @@ class Stack:
     def size(self):
         """Return the number of items in the stack."""
         return len(self.items)
+
+# Usage example:
+if __name__ == "__main__":
+    # Create a new stack
+    stack = Stack()
+
+    # Push some items onto the stack
+    stack.push(1)
+    stack.push(2)
+    stack.push(3)
+
+    # Peek at the top item of the stack
+    print("Top of the stack:", stack.peek())
+
+    # Pop items from the stack until it's empty
+    while not stack.is_empty():
+        print("Popped:", stack.pop())
+
+    # Trying to pop from an empty stack should raise an IndexError
+    # print(stack.pop())
