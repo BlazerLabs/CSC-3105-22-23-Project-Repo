@@ -32,3 +32,23 @@ class Queue:
     def size(self):
         """Return the number of items in the queue."""
         return len(self.items)
+
+# A sample code to test the data strucuture above:
+if __name__ == "__main__":
+    # Create a new queue
+    queue = Queue()
+
+    # Enqueue some items
+    queue.enqueue(1)
+    queue.enqueue(2)
+    queue.enqueue(3)
+
+    # Peek at the front item of the queue
+    print("Front of the queue:", queue.peek())
+
+    # Dequeue items from the queue until it's empty
+    while not queue.is_empty():
+        print("Dequeued:", queue.dequeue())
+
+    # Trying to dequeue from an empty queue should raise an IndexError
+    # print(queue.dequeue())
