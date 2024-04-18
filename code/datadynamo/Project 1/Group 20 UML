@@ -1,0 +1,17 @@
+               ,-----------------------------------.        
+               |Connection                         |        
+               |-----------------------------------|        
+               |+connectedUser: User               |        
+               |+connectionDate: Date              |        
+               |+sendMessage(message: String): void|        
+               `-----------------------------------'        
+                          /|\             /|\                                 
+                           |               |                   
+,-----------------------------------.      |                
+|Group                              |  ,-------------------.
+|-----------------------------------|  |Follower           |
+|+members: List<User>               |  |-------------------|
+|+addUser(user: User): void         |  |+followerUser: User|
+|+removeUser(user: User): void      |  |+followDate: Date  |
+|+postInGroup(content: String): Post|  `-------------------'
+`-----------------------------------'                       

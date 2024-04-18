@@ -1,0 +1,18 @@
+,-------------------.
+|Reaction           |
+|-------------------|
+|+reactingUser: User|
+|+reactionDate: Date|
+|+type: String      |
+|+react(Post)       |
+`-------------------'
+          |          
+          |          
+ ,-----------------. 
+ |Like             | 
+ |-----------------| 
+ |+likingUser: User| 
+ |+likeDate: Date  | 
+ |+Like()          | 
+ |+unLike()        | 
+ `-----------------' 

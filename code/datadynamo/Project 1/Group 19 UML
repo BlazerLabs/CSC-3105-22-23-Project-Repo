@@ -1,0 +1,19 @@
+         ,-----------------.         
+         |Person           |         
+         |-----------------|         
+         |+name: String    |         
+         |+birthdate: Date |         
+         |+location: String|         
+         |+getAge(): int   |         
+         `-----------------'         
+                  |                  
+                  |                  
+,-----------------------------------.
+|User                               |
+|-----------------------------------|
+|+email: String                     |
+|+password: String                  |
+|+createPost(content: String): Post |
+|+addConnection(user: User): void   |
+|+removeConnection(user: User): void|
+`-----------------------------------'

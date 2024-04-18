@@ -1,29 +1,65 @@
+# DataStructuresExample.py
+
+# Linked List
+class ListNode:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def insert(self, data):
+        new_node = ListNode(data)
+        new_node.next = self.head
+        self.head = new_node
+
+# Array
+my_array = [1, 2, 3, 4, 5]
+print("Array elements:", my_array)
+
+# Stack
+my_stack = []
+my_stack.append(10)  # Push an element onto the stack
+popped_item = my_stack.pop()  # Pop the top element from the stack
+print("Popped item:", popped_item)
+
+# Queue
+from queue import Queue
+
+my_queue = Queue()
+my_queue.put(10)
+my_queue.put(20)
+my_queue.put(30)
+
+while not my_queue.empty():
+    print("Dequeued item:", my_queue.get())
+
+# Tree
+class TreeNode:
+    def __init__(self, key):
+        self.key = key
+        self.children = []
+
+class Tree:
+    def __init__(self, key):
+        self.root = TreeNode(key)
+
+my_tree = Tree('Root')
+my_tree.root.children.append(TreeNode('Child1'))
+
+# Graph
 class Graph:
     def __init__(self):
-        self.graph = {}
+        self.adj_list = {}
 
-    def add_edge(self, u, v):
-        if u not in self.graph:
-            self.graph[u] = []
-        self.graph[u].append(v)
+    def add_edge(self, vertex1, vertex2):
+        if vertex1 not in self.adj_list:
+            self.adj_list[vertex1] = []
+        self.adj_list[vertex1].append(vertex2)
 
-    def get_neighbors(self, u):
-        return self.graph.get(u, [])
-
-
-
-# Create a new graph
-graph = Graph()
-
-# Add edges to the graph
-graph.add_edge(0, 1)
-graph.add_edge(0, 2)
-graph.add_edge(1, 3)
-graph.add_edge(2, 4)
-graph.add_edge(2, 5)
-
-# Get neighbors of a node
-print(graph.get_neighbors(0))
-print(graph.get_neighbors(1)) 
-print(graph.get_neighbors(2))
-print(graph.get_neighbors(3))
+my_graph = Graph()
+my_graph.add_edge('A', 'B')
+my_graph.add_edge('B', 'C')
+print("Graph adjacency list:", my_graph.adj_list)

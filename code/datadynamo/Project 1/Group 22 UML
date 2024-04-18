@@ -1,0 +1,9 @@
+,-----------------.
+|Share            |
+|-----------------|
+|+sharedPost: Post|
+|+shareDate: Date |
+|+share(User)     |
+|+unShare(): void |
+|+getReactions()  |
+`-----------------'

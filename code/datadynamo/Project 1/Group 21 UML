@@ -1,0 +1,17 @@
+,-----------------------------------.                 
+|Post                               |  ,-------------.
+|-----------------------------------|  |Media        |
+|+content: String                   |  |-------------|
+|+postDate: Date                    |  |+url: String |
+|+getComments(): List<Comment>      |  |+type: String|
+|+addComment(comment: Comment): void|  |+display()   |
+`-----------------------------------'  `-------------'
+                                                      
+                                                      
+       ,---------------------.                        
+       |Comment              |                        
+       |---------------------|                        
+       |+content: String     |                        
+       |+commentDate: Date   |                        
+       |+commentingUser: User|                        
+       `---------------------'                        
