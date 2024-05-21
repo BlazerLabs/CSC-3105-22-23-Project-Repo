@@ -33,3 +33,32 @@ Each group members were tasked with developing atleast one of those data structu
 
 ## Conclusion
 In conclusion, understanding data structures is crucial for proficient programming, as they serve as the backbone for organizing and accessing data efficiently. Through this project, each group in our corporation has gained valuable insights into various data structures and their implementations in programming languages, contributing to our collective knowledge and proficiency in software development.
+
+## Contributing Members
+- [@devprinceng](https://github.com/devprinceng) - 20/csc/103
+- [@Dennis3625](https://github.com/Dennis3625)   - 20/csc/130
+- [@UDOM081](https://github.com/UDOM081) - 20/csc/132
+- [@PaulOlom](https://github.com/PaulOlom) - 20/csc/110
+- [@Btiangbende](https://github.com/Btiangbende) - 20/csc/153
+- [@isaacmatthew1](https://github.com/isaacmatthew1) - 20/csc/074
+- [@Vickieeeeee](https://github.com/Vickieeeeee) - 20/csc/221
+- [@Anitaofegobi](https://github.com/Anitaofegobi) - 20/csc/ 090
+- [@Zionist001](https://github.com/Zionist001) - 22/d/csc/002
+- [@WhilzWurld](https://github.com/WhilzWurld) - 20/csc/266
+- [@Predon22](https://github.com/Predon22) - 20/csc/181
+- [@Tegzy-cmd](https://github.com/Tegzy-cmd) - 20/csc/114
+- [@LOUIS5E](https://github.com/LOUIS5E) - 20/csc/046
+- [@Sylviachidiebere](https://github.com/Sylviachidiebere) - 20/csc/049
+- [@EmyEverBlessed](https://github.com/EmyEverBlessed) - 20/csc/033
+- [@Gloryuget](https://github.com/Gloryuget) - 20/csc/041
+- [@nduoyobby](https://github.com/nduoyobby) - 20/csc/249
+- [@id-peter](https://github.com/id-peter) - 20/csc/062
+- [@Ekomzytech](https://github.com/Ekomzytech) - 20/csc/243
+- [@Puyela](https://github.com/Puyela) - 20/csc/030
+- [@EMMYFALZ](https://github.com/EMMYFALZ) - 20/csc/263
+- [@Heispresh](https://github.com/Heispresh) - 20/csc/173
+- [@Obsjdh](https://github.com/Obsjdh) - 20/csc/213
+- [@OdeySamuel](https://github.com/OdeySamuel) - 20/csc/089
+- [@Emmyrexoko](https://github.com/Emmyrexoko) - 20/csc/106
+- [@Chrisnkom](https://github.com/Chrisnkom) - 20/csc/081
+- [@Festusolem](https://github.com/Festusolem) - 20/csc/108
